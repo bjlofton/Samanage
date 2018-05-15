@@ -12,37 +12,62 @@ h1, h2, h3, h4, h5, h6 {font-family: Helvetica,Arial,sans-serif;
 
 .full {width: 100%;}
 .page {max-width: 1200px; margin: 0 auto;}
+main button {text-transform: uppercase; font-weight: bold; border: 0; font-size: 14px;}
 
 header {background-color: #0067b3; padding: 15px 0 5px;}
 #phone {float: right; color: white; font-weight: bold;}
 
 #top, #requests {position: relative; z-index: 1;}
 #top img {display: block;}
+#top button {padding: 10px 25px;}
 
-#overlay {position: absolute; z-index: 10; color: white; width: 100%; text-align: center;
-	top: 25%;
+.overlay {position: absolute; z-index: 10; color: white; width: 100%; text-align: center;
   left: 0;
   width: 100%;
   height: 100%;}
+#ov1 {top: 25%;}
 #trans {background-color: rgba(0,0,0,0.5); text-transform: uppercase; padding: 40px 25%; margin-bottom: 50px;}
 #trans h1 {letter-spacing: 2px; font-size: 50px;}
 #trans h3 {font-size: 24px; max-width: 500px; margin: 0 auto;}
 
-main button {text-transform: uppercase; font-weight: bold; padding: 15px 30px;}
-#demo {background-color: #fbcd1b;}
-#free {background-color: #009635;}
+#demo1 {background-color: #fbcd1b; color: #0067b3; margin-left: 20px;}
+#free {background-color: #009635; color: white;}
 
 #cust_logos {background-color: #eceef1;}
 
 #info {margin-top: 100px;}
-#info img:first-child {float: left; margin-right: 30px;}
-#features {margin: 0 20px;}
-#ticket {background: url(assets/samanage-bullet-icons.png) 0 0;}
-#incident {background: url(assets/samanage-bullet-icons.png) -25px 0;}
-#problem {background: url(assets/samanage-bullet-icons.png) -50px 0;}
-#service {background: url(assets/samanage-bullet-icons.png) -75px 0;}
-#self {background: url(assets/samanage-bullet-icons.png) -100px 0;}
-#know {background: url(assets/samanage-bullet-icons.png) -125px 0;}
+#info img:first-child {float: left;}
+#features {margin-left: 30px; width: 50%; float: left;}
+
+.icon {margin-left: -38px; float: left;}
+.icon li { 
+  list-style: none; 
+  position: relative;
+  padding: 15px 50px 10px;
+}
+
+ul.icon li:before {
+  content:"";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 0;
+  top: 11px;
+}
+
+ul li.ticket:before {background: url(assets/samanage-bullet-icons.png) 0 0;}
+ul li.incident:before {background: url(assets/samanage-bullet-icons.png) -25px 26px;}
+ul li.problem:before {background: url(assets/samanage-bullet-icons.png) 0 -43px;}
+ul li.service:before {background: url(assets/samanage-bullet-icons.png) 0 -131px;}
+ul li.self:before {background: url(assets/samanage-bullet-icons.png) 0 -87px;}
+ul li.know:before {background: url(assets/samanage-bullet-icons.png) 0 -177px;}
+
+
+#requests {clear: both;}
+#ov2 {top: 15%;}
+#demo2 {background-color: #fbcd1b; padding: 15px 35px; margin-top: 30px;}
+#requests img {max-height: 250px;}
+#requests h1 {font-size: 40px;}
 
 
 #social_media {text-align: center;}
