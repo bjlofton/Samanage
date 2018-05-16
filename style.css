@@ -14,49 +14,43 @@ h1, h2, h3, h4, h5, h6 {font-family: Helvetica,Arial,sans-serif;
 .page {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
 main button {text-transform: uppercase; font-weight: bold; border: 0; font-size: 14px;}
 
+/* top blue strip */
 header {background-color: #0067b3; padding: 15px 0 5px;}
 header img {height: 20px;}
 #phone {float: right; color: white; font-weight: bold;}
 
+/* top image and buttons */
 #top, #requests {position: relative; z-index: 1;}
 #top img {display: block;}
 #top button {padding: 10px 30px;}
 
+/* transparent section */
 .overlay {position: absolute; z-index: 10; color: white; width: 100%; text-align: center;
-  left: 0;
-  width: 100%;
-  height: 100%;}
+  left: 0; width: 100%; height: 100%;}
 #ov1 {top: 25%;}
 #trans {background-color: rgba(0,0,0,0.5); text-transform: uppercase; padding: 40px 15%; margin-bottom: 50px;}
 #trans h1 {letter-spacing: 2px; font-size: 50px;}
 #trans h3 {font-size: 24px; max-width: 500px; margin: 0 auto;}
 
+/* top 2 buttons */
 #demo1 {background-color: #fbcd1b; color: #0067b3; margin-left: 20px;}
 #free {background-color: #009635; color: white;}
 
+/* middle grey section */
 #cust_logos {background-color: #eceef1;}
 
+/* features section w/ ipad image */
 #info {margin-top: 100px;}
 #info img:first-child {float: left;}
 #features {margin-left: 30px; width: 50%; float: left;}
 #ipad2 {display: none;}
 
+/* make image sprites bullets */
 .icon {margin-left: -38px; float: left;}
-.icon li { 
-  list-style: none; 
-  position: relative;
-  padding: 15px 50px 10px;
+.icon li {list-style: none; position: relative;padding: 15px 50px 10px;}
+ul.icon li:before {content:""; width: 26px; height: 26px; position: absolute;
+  left: 0; top: 11px;
 }
-
-ul.icon li:before {
-  content:"";
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  left: 0;
-  top: 11px;
-}
-
 ul li.ticket:before {background: url(assets/samanage-bullet-icons.png) 0 0;}
 ul li.incident:before {background: url(assets/samanage-bullet-icons.png) -25px 26px;}
 ul li.problem:before {background: url(assets/samanage-bullet-icons.png) 0 -43px;}
@@ -70,13 +64,14 @@ ul li.mobile:before {background: url(assets/samanage-bullet-icons.png) -25px -87
 ul li.google:before {background: url(assets/samanage-bullet-icons.png) -25px -131px;}
 ul li.dash:before {background: url(assets/samanage-bullet-icons.png) -25px -177px;}
 
+/* blue section about requests */
 #requests {clear: both;}
 #ov2 {top: 15%;}
 #demo2 {background-color: #fbcd1b; padding: 15px 35px; margin-top: 30px;}
 #requests img {max-height: 250px;}
 #requests h1 {font-size: 40px;}
 
-
+/* social media section */
 #social_media {text-align: center;}
 #social_media img {margin: 50px 20px; width: 55px; height: 54px;}
 #fb {background: url(assets/samanage-social-share.png) 0 0;}
@@ -88,9 +83,10 @@ ul li.dash:before {background: url(assets/samanage-bullet-icons.png) -25px -177p
 
 .logos {display: block; padding: 15px 0;}
 
+
 footer {background-color: #f2f2f2; padding: 25px; text-align: center; font-size: 11px;}
 
-
+/* viewport smaller that 1200px */
 @media (max-width: 1200px) {
   .page {max-width: 900px;}
   #ov1 {top: 15%;}
@@ -99,6 +95,7 @@ footer {background-color: #f2f2f2; padding: 25px; text-align: center; font-size:
   #features {width: 100%; margin: 0 auto;}
   #ipad2 {display: inline; float: right; height: 280px; margin-top: 10px;}
 }
+/* viewport smaller that 970px */
 @media (max-width: 970px) {
   .page {max-width: 600px;}
   #trans {padding: 10px 10%;}
@@ -109,6 +106,7 @@ footer {background-color: #f2f2f2; padding: 25px; text-align: center; font-size:
   #ipad2 {display: none;}
   #requests img {min-height: 250px;}
 }
+/* viewport smaller that 700px */
 @media (max-width: 700px) {
   .page {max-width: 450px;}
   #trans {margin-bottom: 20px;}
@@ -119,6 +117,7 @@ footer {background-color: #f2f2f2; padding: 25px; text-align: center; font-size:
   #requests h3 {font-size: 3vw;}
   #social_media img {margin: 30px 5px;}
 }
+/* viewport smaller that 480px */
 @media (max-width: 480px) {
   .page {max-width: 350px;}
   #top img {height: 250px; width: auto;}
